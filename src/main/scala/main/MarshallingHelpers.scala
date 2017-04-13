@@ -1,13 +1,12 @@
 package main
 
-// import java.nio.CharBuffer
 import akka.http.scaladsl.marshalling._
-// import akka.http.scaladsl.unmarshalling._
-import akka.NotUsed
 import akka.http.scaladsl.model._
 import akka.stream.scaladsl.Source
-// import play.api.libs.json._
 
+/**
+  * Marshalling helpers; used by our Akka HTTP service to stream text to an HTTP connection
+  */
 object MarshallingHelpers {
   trait PlainTextWriter[A] {
     def writes(value: A): String
