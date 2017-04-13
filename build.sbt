@@ -5,6 +5,8 @@ scalaVersion := "2.11.8"
 val akkaVersion = "2.4.17"
 val kamonVersion = "0.6.6"
 
+version := "0.1"
+
 libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-cluster-sharding" % akkaVersion,
   "com.typesafe.play" %% "play-json" % "2.4.3",

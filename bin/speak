@@ -1,0 +1,3 @@
+#!/bin/bash
+
+curl -X PUT localhost:${PORT:-8080}/room/$1 --data "$(cat -)"
